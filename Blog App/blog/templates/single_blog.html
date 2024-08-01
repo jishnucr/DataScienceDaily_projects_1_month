@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block main_content %}
+
+<h1>Title:{{single.title}}</h1>
+<hr>
+<div>
+    <h4>{{single.created_date}}</h4>
+    <h2>Content</h2>
+    <p>{{single.content}}</p>
+
+    <button>
+        <a href="{% url "List" %}" type="submit">Home</a>
+        </button>
+</div>
+
+{% endblock %}
